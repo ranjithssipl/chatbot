@@ -1,0 +1,157 @@
+.custom-scroll {
+  min-height: 0;
+  min-width: 0;
+}
+.custom-scroll .outer-container {
+  overflow: hidden;
+  position: relative;
+}
+.custom-scroll .outer-container:hover .custom-scrollbar {
+  opacity: 1;
+  transition-duration: 0.2s;
+  flex: 1 1 0%;
+}
+.custom-scroll .inner-container {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  margin-right: -15px;
+  height: 100%;
+}
+.custom-scroll .inner-container:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.05) 60%, transparent 100%);
+  pointer-events: none;
+  transition: height 0.1s ease-in;
+  will-change: height;
+}
+.custom-scroll .inner-container.content-scrolled:after {
+  height: 5px;
+  transition: height 0.15s ease-out;
+}
+.custom-scroll.scroll-handle-dragged .inner-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.custom-scroll .custom-scrollbar {
+  position: absolute;
+  height: 100%;
+  width: 6px;
+  right: 3px;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.4s ease-out;
+  padding: 6px 0;
+  box-sizing: border-box;
+  will-change: opacity;
+  pointer-events: none;
+}
+.custom-scroll .custom-scrollbar.custom-scrollbar-rtl {
+  right: auto;
+  left: 3px;
+}
+.custom-scroll.scroll-handle-dragged .custom-scrollbar {
+  opacity: 1;
+}
+.custom-scroll .custom-scroll-handle {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 63.5294px;
+}
+.custom-scroll .inner-handle {
+  height: calc(100% - 12px);
+  margin-top: 6px;
+  background-color: rgba(78, 183, 245, 0.7);
+  border-radius: 3px;
+}
+#scroll{
+  margin-right: 0px;
+  height: 100%;
+  overflow-x: visible;
+}
+
+
+
+/* ================================= */
+
+/*************** SCROLLBAR BASE CSS ***************/
+ 
+.App .scroll-wrapper {
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: relative;
+}
+
+.App .scroll-wrapper > .scroll-content {
+  border: none !important;
+  box-sizing: content-box !important;
+  height: auto;
+  left: 0;
+  margin: 0;
+  max-height: none;
+  max-width: none !important;
+  overflow: scroll !important;
+  padding: 0;
+  position: relative !important;
+  top: 0;
+  width: auto !important;
+}
+
+.App .scroll-wrapper > .scroll-content::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+.App.scroll-element {
+  display: none;
+}
+.App.scroll-element, .scroll-element div {
+  box-sizing: content-box;
+}
+
+.App.scroll-element.scroll-x.scroll-scrollx_visible,
+.App.scroll-element.scroll-y.scroll-scrolly_visible {
+  display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+  cursor: default;
+}
+
+.APP .scroll-textarea {
+  border: 1px solid #cccccc;
+  border-top-color: #999999;
+}
+.App .scroll-textarea > .scroll-content {
+  overflow: hidden !important;
+}
+.App .scroll-textarea > .scroll-content > textarea {
+  border: none !important;
+  box-sizing: border-box;
+  height: 100% !important;
+  margin: 0;
+  max-height: none !important;
+  max-width: none !important;
+  overflow: scroll !important;
+  outline: none;
+  padding: 2px;
+  position: relative !important;
+  top: 0;
+  width: 100% !important;
+}
+.App .scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+  height: 0;
+  width: 0;
+}
+
+
+
+

@@ -1,0 +1,157 @@
+.customModal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-bottom: 100px; */
+    left: 0;
+    top: 50%;
+    width: 100%;
+    padding-right:5.5%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+}
+
+/* Modal Content */
+.customModal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid #888;
+    width: 95%;
+    height:37%
+}
+
+/* The Close Button */
+.modalClose {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.modalClose:hover,
+.modalClose:focus {
+    color: rgb(202, 178, 165);
+    text-decoration: none;
+    cursor: pointer;
+}
+.customClose-modal {
+    float:right;
+    border:none;
+    background: none;
+}
+.customModal_body {
+    color:black;
+    font-size:16px;
+}
+
+/* ===============================================-Modal Box table-======================================= */
+
+.tableModal {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /* padding-bottom: 100px; */
+    left: 0;
+    top: 26%;
+    width: 100%;
+    padding-right:5.5%;
+    height: 100%;
+    overflow: auto; 
+    /* background-color: rgb(0,0,0); Fallback color */
+    /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+}
+
+/* Modal Content */
+.tableModal-content {
+    background-color: #cbdae2;
+    margin: auto;
+    /* padding: 20px; */
+    border: 2px solid #fbb734;
+    width: 111%;
+    height:111%;
+    margin-left: -14px;
+    margin-top: -11px;
+}
+
+/* The Close Button */
+.tableClose {
+    color: #000;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tableClose:hover,
+.tableClose:focus {
+    color: rgba(228, 222, 222, 0.822);
+    text-decoration: none;
+    cursor: pointer;
+}
+.tableClose-modal {
+    float:right;
+    border:none;
+    background: none;
+}
+.tableModal_body {
+    color:#175890;
+    font-size:10.5px;
+    padding-top:13.5%;
+    /* padding-left:-0.8% */
+}
+#table-responsive{
+    overflow-x: inherit;
+}
+
+/* ========================================= */
+.App.slick-prev .slick-arrow .slick-disabled{
+    display: block;
+}
+.App.slick-list draggable{
+    opacity: 1; 
+    width: 15000px; 
+    transform: translate3d(0px, 0px, 0px);
+}
+product_image{
+    padding-bottom: 38px; 
+}
+.slick-next .slick-arrow{
+    display:block;
+}
+.App.slick-track{
+    opacity: 1;
+    width: 15000px;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+
+
+
+
+.ReactModal__Overlay .ReactModal__Overlay--after-open{
+    z-index: 9999;
+    position: fixed;
+    top: 0px;
+    /* left: 0px; */
+    right: 19%;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+.ReactModal__Content .ReactModal__Content--after-open {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 289px;
+}
