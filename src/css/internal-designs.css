@@ -239,32 +239,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
 .button_text_list ul li a:hover {
 	text-decoration:none;
 }
-/* ====================================-horizontal list scroll-========================================== */
-.scrollmenu {
-	white-space: nowrap;
-	/* overflow-x:scroll; */
-}
-
-.scrollmenu li {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-	text-decoration: none;
-}
-
-.scrollmenu li:hover {
-    background-color: #254d86;
-}
-.scrollmenu li a{
-	color:white;
-}
-.scrollmenu .coverup {
-	
-    /* position: relative;
-    left: 0; top: -40px; */
-    /* background: #fff; */
-}
 
 /* =========================================-modify bootstrap styles-======================================= */
 .App #card_no {
@@ -272,7 +246,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
 	font-weight: bold;
 }
 #file{
-	margin-top:3%;
+	margin-top:-9%;
 }
 
 /* ====================================================================-Custom styles-=========================*/
@@ -290,13 +264,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
 	width: 13.1%
 }
 .travel_400 img{
-	width: 20.5%
-}
-.target_400 img{
-	width: 25%
+	width: 18%
 }
 .target_1000 img{
-	width: 28%
+	width: 26%
 }
 #comments{
 	color:#175890;
@@ -324,11 +295,19 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
 #amount_button{
 	padding-top: 3%;
 }
-/* #radio{
+/* .App #radio{
 	width: 100%;
-	height: 45%;
+	height: 39%;
+	margin-left: -56%;
+}
+.App #radio_01{
+	width: 100%;
+	height: 55%;
 	margin-left: -56%;
 } */
+.App li{
+	list-style: none;
+}
 
 
 /* ==================================================================-Image Slide show-================================================ */
@@ -494,6 +473,10 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
 }
 .fileupload {
 	margin-bottom:9px;
+	margin-left: 72px;
+}
+.fileupload .fileupload-new{
+	position: relative;
 }
 .fileupload .uneditable-input {
 	display:inline-block;
@@ -549,11 +532,40 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=
     position: fixed;
     /* margin-right: -2.2%; */
     /* padding-left: 267px; */
-    right: -17px;
-    /* padding-right: 20px; */
-    padding-left: 250px;
-    top: -1.2%;
+	right: -22px;
+	/* right: 51px; */
+    right: -17.9px;
+	top: -1.3%;
+	/* top: 6.7%;
+	z-index: 99999; */
 }
 #menu1 img{
-	width:70%;
+	/* width:50%; */
+	width:75%;
+}
+#upload{
+	background: none;
+    border: none;
+    /* margin-right: 113px; */
+	/* width: 51%; */
+	padding: 0px;
+	-webkit-box-shadow:none;
+	border-radius: 0px;
+}
+#upload_image{
+	width: 100%;
+}
+#upload_image2{
+	width: 100%;
+}
+#passport{
+	height:100%;
+	width:153%;
+}
+#emiratesId{
+	height:100%;
+	width:153%;
+}
+.App .highcharts-root{
+	padding-bottom: 20px;
 }

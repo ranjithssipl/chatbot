@@ -45,6 +45,7 @@
 .customModal_body {
     color:black;
     font-size:16px;
+    max-height: 230px;
 }
 
 /* ===============================================-Modal Box table-======================================= */
@@ -71,9 +72,10 @@
     /* padding: 20px; */
     border: 2px solid #fbb734;
     width: 111%;
-    height:111%;
+    height:auto;
     margin-left: -14px;
     margin-top: -11px;
+    overflow: auto;
 }
 
 /* The Close Button */
@@ -82,6 +84,7 @@
     float: right;
     font-size: 30px;
     font-weight: bold;
+    margin-top: -10px;
 }
 
 .tableClose:hover,
@@ -99,6 +102,7 @@
     color:#175890;
     font-size:10.5px;
     padding-top:13.5%;
+    max-height: 230px;
     /* padding-left:-0.8% */
 }
 #table-responsive{

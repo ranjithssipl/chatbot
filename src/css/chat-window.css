@@ -81,10 +81,10 @@
 }
 .bottom_wrapper .message_input_wrapper {
 	display: inline-block;
-	height: 50px;
+	height: 38px;
 	border-radius: 12px;
 	border: 1px solid #bcbdc0;
-	width: 80%;
+	width: 81.5%;
 	position: relative;
 	padding: 0 14px;
 	border-color: #d6c5a4;
@@ -106,7 +106,11 @@
     transition: all 0.2s linear;
     text-align: center;
     float: right;
-	padding:9px 2px 0 0;
+	/* padding:9px 2px 0 0; */
+	padding-top: 4px;
+}
+.bottom_wrapper .send_message img{
+	width:80%;
 }
 .bottom_wrapper .send_message:hover {
 	color: #a3d063;
@@ -128,8 +132,8 @@
     list-style: none;
     padding: 20px 10px 0 10px;
     margin: 0;
-    height: 427.5px;
-    overflow: scroll;
+    height: 437.5px;
+    overflow: auto;
 	}
 	.messages .message .avatar {
 	  width: 52px;
@@ -145,7 +149,8 @@
 	}
 	.messages .message.left .text_wrapper {
 	  background-color: #fbb731;
-	  margin-left: 20px;
+	  margin-left: 9px;
+	  width:76%;
 	}
 
 	.messages .message .text_wrapper .text {
@@ -215,13 +220,16 @@
 	
 	.messages .message .text_wrapper {
 	  display: inline-block;
-	  padding: 15px;
+	  padding: 10px 15px 0px 15px;
 	  border-radius: 18px;
 	  width: calc(100% - 85px);
 	  min-width: 100px;
 	  position: relative;
 	}
 
+	.avatar img{
+		width:80%;
+	}
 
 	.App .conversation-container .title {
 		padding:0px;

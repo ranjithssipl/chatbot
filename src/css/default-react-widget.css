@@ -93,7 +93,7 @@
   }
   .widget-container {
       max-width: 370px !important;
-      top:45%;
+      top:50%;
       display: flex;
       flex-direction: column;
       margin: 0 20px 20px 0;
@@ -107,6 +107,7 @@
       padding: 15px !important;
       color:#175890 !important;
       border: 2px solid !important;
+      margin-bottom: 15px;
   }
   
   .snippet {
@@ -126,9 +127,10 @@
   
   .App .launcher {
       z-index: -1 !important;
-      margin-top: 73%;
+      /* margin-top: 73%; */
       background-color: #fbb734;
-
+      bottom: 40px;
+      position: inherit;
   }
   
   .App .sender {
